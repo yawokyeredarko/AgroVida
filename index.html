@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroVida — Smart Agriculture for a Better Future</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Playfair Display (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- =========================================================
+       HEADER — Navigation fixe
+  ========================================================= -->
+  <header class="site-header">
+    <nav class="nav nav--dark">
+      <div class="nav__logo">
+        <img src="image/logo77.svg" alt="AgroVida" class="nav__logo-text" />
+      </div>
+
+      <div class="nav__actions">
+        <!-- Language dropdown -->
+        <div class="nav__lang-dropdown">
+          <button class="nav__lang-current btn btn--outline" aria-haspopup="true" aria-expanded="false">FR</button>
+          <ul class="nav__lang-menu">
+            <li><button class="nav__lang-option" data-lang="fr">FR</button></li>
+            <li><button class="nav__lang-option" data-lang="en">EN</button></li>
+            <li><button class="nav__lang-option" data-lang="pt">PT</button></li>
+          </ul>
+        </div>
+        <a href="#contact" class="btn btn--outline" data-i18n="nav.contact">Take Contact</a>
+        <a href="#download" class="btn btn--primary" data-i18n="nav.download">Download</a>
+      </div>
+
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- =========================================================
+       SECTION 1 — HERO IMAGE
+       Image 90% centrée + titre overlay
+  ========================================================= -->
+  <section class="hero" aria-label="Hero">
+
+    <div class="hero__frame">
+      <!-- Hero background image -->
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <!-- Decorative overlay gradient -->
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <!-- Hero content overlay -->
+      <div class="hero__content">
+        <h1 class="hero__title">
+          <span class="hero__title-accent">A</span>groVida
+        </h1>
+        <p class="hero__subtitle" data-i18n="hero.subtitle">presented by Uddan IT</p>
+      </div>
+    </div>
+
+  </section>
+
+  <main>
+
+    <!-- =========================================================
+         SECTION 2 — VALUE PROPOSITION
+         Tagline + 3 feature cards (More Knowledge, More Control,
+         Better Decisions)
+    ========================================================= -->
+    <section class="value" id="value" aria-labelledby="value-heading">
+      <div class="value__intro">
+        <h2 class="value__heading" id="value-heading" data-i18n="value.heading">
+          Smart Agriculture<br />for a Better Future
+        </h2>
+        <p class="value__description" data-i18n="value.description">
+          AgroVida is a smart app that helps farmers improve daily management. Using AI, weather
+          forecasts, and smart recommendations, it boosts productivity and supports sustainable
+          farming.
+        </p>
+      </div>
+
+      <!-- Feature cards grid -->
+      <div class="value__cards">
+
+        <!-- Card 1 — More Knowledge -->
+        <article class="card card--light">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="56" height="56">
+              <circle cx="32" cy="28" r="18" stroke="currentColor" stroke-width="3" />
+              <path d="M24 44 L28 56 L36 56 L40 44" stroke="currentColor" stroke-width="3" stroke-linejoin="round" />
+              <line x1="28" y1="56" x2="36" y2="56" stroke="currentColor" stroke-width="3" />
+              <circle cx="32" cy="26" r="6" fill="currentColor" opacity="0.2" />
+              <path d="M26 22 Q32 14 38 22" stroke="currentColor" stroke-width="2.5" fill="none"
+                stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="card__title" data-i18n="cards.knowledge.title">More Knowledge</h3>
+          <p class="card__text" data-i18n="cards.knowledge.text">
+            Access, analyse and apply data to better understand your crops and make evidence-based
+            farming decisions in real time.
+          </p>
+        </article>
+
+        <!-- Card 2 — More Control (highlighted) -->
+        <article class="card card--dark">
+          <h3 class="card__title" data-i18n="cards.control.title">More Control</h3>
+          <p class="card__text" data-i18n="cards.control.text">
+            Manage your farm activities with guided commands and real-time insights, so you're in
+            control every day.
+          </p>
+        </article>
+
+        <!-- Card 3 — Better Decisions (highlighted) -->
+        <article class="card card--dark">
+          <h3 class="card__title" data-i18n="cards.decisions.title">Better Decisions</h3>
+          <p class="card__text" data-i18n="cards.decisions.text">
+            Get real, actionable advice and precise recommendations tailored to help you make
+            profitable decisions for your agricultural business.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 3 — CONTEXT-BASED DECISIONS
+         Two field images left + feature list right
+    ========================================================= -->
+    <section class="decisions" id="features" aria-labelledby="decisions-heading">
+
+      <!-- Left: image collage -->
+      <div class="decisions__images">
+        <div class="decisions__image decisions__image--top" aria-label="Crop field close-up"></div>
+        <div class="decisions__image decisions__image--bottom" aria-label="Storm over field"></div>
+        <div class="decisions__image decisions__image--right" aria-label="Crop rows aerial view"></div>
+      </div>
+
+      <!-- Right: feature breakdown -->
+      <div class="decisions__content">
+        <h2 class="decisions__heading" id="decisions-heading" data-i18n="decisions.heading">
+          Context-Based<br />Decisions
+        </h2>
+
+        <div class="decisions__features">
+
+          <div class="decisions__feature">
+            <h4 class="decisions__feature-title" data-i18n="decisions.f1.title">Crop-Based Analysis</h4>
+            <p class="decisions__feature-text" data-i18n="decisions.f1.text">
+              AgroVida analyses the right information for your farm so you can understand your crop
+              cycle and make the best possible decisions in each phase.
+            </p>
+          </div>
+
+          <div class="decisions__feature">
+            <h4 class="decisions__feature-title" data-i18n="decisions.f2.title">Weather &amp; Field Conditions</h4>
+            <p class="decisions__feature-text" data-i18n="decisions.f2.text">
+              We take into account weather forecasts and field conditions to suggest the most
+              appropriate actions, helping you anticipate and react faster to changing environments.
+            </p>
+          </div>
+
+          <div class="decisions__feature">
+            <h4 class="decisions__feature-title" data-i18n="decisions.f3.title">Precision Recommendations</h4>
+            <p class="decisions__feature-text" data-i18n="decisions.f3.text">
+              Benefit from AI-powered recommendations calibrated to your crops, your soil, and your
+              local context for maximum yield and minimum waste.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Sub-section: 3 analysis thumbnails with captions -->
+    <section class="analysis" aria-label="Crop analysis examples">
+      <div class="analysis__grid">
+
+        <article class="analysis__item">
+          <div class="analysis__thumb analysis__thumb--1" aria-hidden="true"></div>
+          <h5 class="analysis__label" data-i18n="analysis.a1.title">Plant Health Scan</h5>
+          <p class="analysis__caption" data-i18n="analysis.a1.text">
+            Capture a photo of a plant to quickly assess its overall
+            condition, including signs of stress, yellowing, or other visible abnormalities.
+          </p>
+        </article>
+
+        <article class="analysis__item">
+          <div class="analysis__thumb analysis__thumb--2" aria-hidden="true"></div>
+          <h5 class="analysis__label" data-i18n="analysis.a2.title">Disease Identification</h5>
+          <p class="analysis__caption" data-i18n="analysis.a2.text">
+            Uses AI to detect plant diseases and identify issues such as pests, nutrient deficiencies, or infections
+            with improved accuracy.
+          </p>
+        </article>
+
+        <article class="analysis__item">
+          <div class="analysis__thumb analysis__thumb--3" aria-hidden="true"></div>
+          <h5 class="analysis__label" data-i18n="analysis.a3.title">Problem Solver</h5>
+          <p class="analysis__caption" data-i18n="analysis.a3.text">
+            Delivers clear, actionable recommendations to address the problem, helping users take the right steps
+            quickly and effectively.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 4 — SOLUTION
+         3 image carousel with prev/next + click to switch
+    ========================================================= -->
+    <section class="solution" id="solution" aria-labelledby="solution-heading">
+      <div class="solution__inner">
+
+        <!-- Top row: title left, description right -->
+        <div class="solution__header">
+          <h2 class="solution__title" id="solution-heading" data-i18n="solution.title">Solution</h2>
+          <p class="solution__desc" data-i18n="solution.desc">
+            Here, you can explore the solution developed for Agrovida through images of the
+            application and the website. All features have been designed to optimize work
+            processes and save time, ensuring a more efficient and user-friendly experience.
+          </p>
+        </div>
+
+        <!-- Image trio -->
+        <div class="solution__images" id="solutionImages">
+          <div class="solution__slide solution__slide--active">
+            <img src="image/desktop1.png" alt="Solution screenshot 1" />
+            <img src="image/desktop2.png" alt="Solution screenshot 2" />
+            <img src="image/desktop3.png" alt="Solution screenshot 3" />
+          </div>
+        </div>
+
+        <!-- Bottom row: click-to-switch left, prev/next right -->
+        <div class="solution__controls">
+          <div class="solution__controls-left">
+            <span class="solution__view-label" id="solutionViewLabel">Desktop View</span>
+            <button class="solution__switch-btn" id="solutionSwitch" data-i18n="solution.switch">Switch to Mobile</button>
+          </div>
+          <div class="solution__nav">
+            <button class="solution__nav-btn" id="solutionPrev" aria-label="Précédent">&#8249;</button>
+            <button class="solution__nav-btn" id="solutionNext" aria-label="Suivant">&#8250;</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 5 — ABOUT UDDAN IT
+         Company description + circular image placeholder
+    ========================================================= -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <!-- Circular decorative image -->
+      <div class="about__visual" aria-hidden="true">
+        <div class="about__circle"></div>
+      </div>
+
+      <div class="about__content">
+        <p class="about__label" data-i18n="about.label">About UDDAN IT </p>
+        <h2 class="about__heading" id="about-heading" data-i18n="about.heading">
+          IT Consulting Company Specialized in Outsystems Low-Code Solutions
+        </h2>
+
+        <p class="about__body" data-i18n="about.p1">
+          With decades of experience in the information technology industry and technological
+          expertise across a wide range of consulting and delivery practices, Uddan IT has
+          established itself as a technology company focused on innovation in key sectors such as
+          well-being, banking, energy, insurance, healthcare, food, and NGOs.
+        </p>
+
+        <p class="about__body" data-i18n="about.p2">
+          We ensure this form of application does come from both a business and technological perspective, with the goal
+          of being truly represented in innovative solutions. Uddan IT accompanies its clients in their digital
+          transformation processes and guides their organisation toward further stages of continuous growth.
+        </p>
+
+        <p class="about__body" data-i18n="about.p3">
+          Uddan IT also has a multi-technology center with a broad portfolio to support innovation and research into the
+          best services for your needs, as well as services such as integrations, migrations, and legacy technology
+          transition.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 6 — GET IN TOUCH (Contact + Footer)
+         Contact form left, office locations right
+    ========================================================= -->
+    <footer class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="contact__inner">
+
+        <!-- Left: Contact form -->
+        <div class="contact__form-wrap">
+          <h2 class="contact__heading" id="contact-heading" data-i18n="contact.heading">Get In Touch</h2>
+          <p class="contact__intro-info">
+            <span data-i18n="contact.sayHi">Say hi at:</span>
+            <a href="mailto:info@agro-vida.eu" class="contact__email">info@agro-vida.eu</a>
+          </p>
+
+
+          <!-- Form (no <form> action needed for static demo) -->
+          <div class="form">
+            <div class="form__group">
+              <input class="form__input" type="text" id="name" name="name" placeholder="Name / Company"
+                autocomplete="organization" />
+              <label class="form__label" for="name" data-i18n="form.nameLabel">Name / Company</label>
+            </div>
+
+            <div class="form__group">
+              <input class="form__input" type="email" id="email" name="email" placeholder="Email"
+                autocomplete="email" />
+              <label class="form__label" for="email" data-i18n="form.emailLabel">Email</label>
+            </div>
+            
+            <div class="form__group form__group--textarea">
+              <textarea class="form__input form__input--textarea" id="message" name="message" rows="4"
+                placeholder="Type your message"></textarea>
+              <label class="form__label" for="message" data-i18n="form.messageLabel">Type your message</label>
+            </div>
+
+            <div class="form__consent">
+              <input class="form__checkbox" type="checkbox" id="consent" name="consent" />
+              <label class="form__consent-label" for="consent">
+                <span data-i18n="form.consent"></span>
+              </label>
+            </div>
+
+            <button class="btn btn--primary form__submit" type="submit" data-i18n="form.send">Send</button>
+          </div>
+        </div>
+
+        <!-- Right: Office locations -->
+        <address class="offices">
+
+          <div class="offices__city">
+            <h4 class="offices__city-name">Lisbon</h4>
+            <p class="offices__address">
+              Av. da República, 32 – 4.º Esq. <br>
+              1050-193 Lisboa
+            </p>
+          </div>
+
+          <div class="offices__city">
+            <h4 class="offices__city-name">Castelo Branco</h4>
+            <p class="offices__address">
+              Rua José Bento, 2 – 2.º Drt. <br>
+              6000-243 Castelo Branco
+            </p>
+          </div>
+
+          <div class="offices__city">
+            <h4 class="offices__city-name">Brussels</h4>
+            <p class="offices__address">
+              Louizalaan 54 Avenue Louise, <br>
+              1050 Bruxelles, Belgique
+            </p>
+          </div>
+
+          <div class="offices__city">
+            <h4 class="offices__city-name">Amsterdam</h4>
+            <p class="offices__address">
+              Grote Bickersstraat 74-78 <br>
+              Amsterdam, 1013KS
+            </p>
+          </div>
+
+          <div class="offices__city">
+            <h4 class="offices__city-name">Stockholm</h4>
+            <p class="offices__address">
+              Stockholm, Lilla Nygatan 23, 111 28 <br>
+
+              Stockholm, Sweden
+            </p>
+          </div>
+
+          <div class="offices__city">
+            <h4 class="offices__city-name">Malmö</h4>
+            <p class="offices__address">
+              Nordenskioldsgatan 11a, 211 19 <br>
+
+              Malmö, Suécia
+
+
+            </p>
+          </div>
+
+        </address>
+
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
