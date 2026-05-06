@@ -1007,7 +1007,7 @@
   /* Visually hide the label (label text is in placeholder) */
   .form__label {
     position: absolute;
-    top: 0.65rem;
+    top: 0.68rem;
     left: 0.75rem;
     font-size: 0.8125rem;
     color: var(--color-muted);
